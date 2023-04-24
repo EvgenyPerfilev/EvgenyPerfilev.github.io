@@ -1,0 +1,77 @@
+/*Подключение шрифта*/
+@font-face {
+    font-family: 'InterRegular';
+    src: url('../fonts/InterRegular.eot');
+    src: url('../fonts/InterRegular.eot') format('embedded-opentype'),
+         url('../fonts/InterRegular.woff2') format('woff2'),
+         url('../fonts/InterRegular.woff') format('woff'),
+         url('../fonts/InterRegular.ttf') format('truetype'),
+         url('../fonts/InterRegular.svg#InterRegular') format('svg');
+}
+@font-face {
+    font-family: 'InterBold';
+    src: url('../fonts/InterBold.eot');
+    src: url('../fonts/InterBold.eot') format('embedded-opentype'),
+         url('../fonts/InterBold.woff2') format('woff2'),
+         url('../fonts/InterBold.woff') format('woff'),
+         url('../fonts/InterBold.ttf') format('truetype'),
+         url('../fonts/InterBold.svg#InterBold') format('svg');
+}
+.reg(){
+	font-family: 'InterRegular', sans-serif ;
+}
+.bold(){
+	font-family: 'InterBold', sans-serif ;
+}
+
+//*Базовые цвета*/
+@base-color: #ac63b9;
+@text: #282828;
+
+/*Базовые секции*/
+html{
+	font-size: 10px;
+}
+body{
+	.reg
+}
+
+/*Типография*/
+section{
+	padding: 10rem 0;
+}
+
+/* main */
+.main{
+	padding: 4rem 0;
+	color: @text;
+	&-text1{
+		margin-top: 9rem;
+		/*Главный заголовок*/
+		h1{
+			.bold();
+			font-size: 3.8rem;
+			color: @base-color;
+		}
+		h2{
+			.reg();
+			margin-top: 4rem;
+			font-size: 1.3rem;
+		}
+	}
+}
+.header{
+	height: 4rem;
+}
+.menu{
+	display: inline-block;
+	font-weight: 200;
+	font-size: 2rem;
+	height: 4rem;
+	line-height: 4rem;
+	margin-left: 1.6rem;
+	color: @text;
+}
+.fotorama {
+	margin-top: 40px;
+}
