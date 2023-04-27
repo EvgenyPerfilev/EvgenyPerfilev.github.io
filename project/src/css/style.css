@@ -1,0 +1,215 @@
+/*Подключение шрифта*/
+@font-face {
+  font-family: 'InterRegular';
+  src: url('../fonts/InterRegular.eot');
+  src: url('../fonts/InterRegular.eot') format('embedded-opentype'), url('../fonts/InterRegular.woff2') format('woff2'), url('../fonts/InterRegular.woff') format('woff'), url('../fonts/InterRegular.ttf') format('truetype'), url('../fonts/InterRegular.svg#InterRegular') format('svg');
+}
+@font-face {
+  font-family: 'InterBold';
+  src: url('../fonts/InterBold.eot');
+  src: url('../fonts/InterBold.eot') format('embedded-opentype'), url('../fonts/InterBold.woff2') format('woff2'), url('../fonts/InterBold.woff') format('woff'), url('../fonts/InterBold.ttf') format('truetype'), url('../fonts/InterBold.svg#InterBold') format('svg');
+}
+/*Базовые секции*/
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'InterRegular', sans-serif;
+}
+/*Типография*/
+section {
+  padding: 10rem 0;
+}
+.section-header {
+  margin: 2rem 0 10rem;
+  font-family: 'InterBold', sans-serif;
+  font-size: 3.6rem;
+  text-align: center;
+}
+/* main */
+.main {
+  padding: 4rem 0;
+  color: #282828;
+  /* Главная  форма */
+}
+.main-text1 {
+  margin-top: 9rem;
+  /*Главный заголовок*/
+}
+.main-text1 h1 {
+  font-family: 'InterBold', sans-serif;
+  font-size: 3.8rem;
+  color: #ac63b9;
+}
+.main-text1 h2 {
+  font-family: 'InterRegular', sans-serif;
+  margin-top: 4rem;
+  font-size: 1.3rem;
+}
+.main-form {
+  padding: auto;
+  background-color: #fff;
+  text-align: center;
+  /* Подписи к полям */
+  /*Кнопка оставить заявку*/
+}
+.main-form-input {
+  display: block;
+  margin: 2rem  0;
+  width: 100%;
+  border: 1px solid #dddddd;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+.main-form label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  background-color: #fff;
+  font-family: 'InterBold', sans-serif;
+}
+.main-form-btn {
+  display: block;
+  width: 100%;
+  height: 5.5rem;
+  font-style: 1.6rem;
+}
+.header {
+  height: 4rem;
+}
+/*.wrap{
+	display: table;
+	width: 100%;
+	height: 7rem;
+&-block{
+	display: table-cell;
+	vertical-align: middle;
+}	
+}*/
+/*Оформление секции с командой*/
+.team {
+  margin-top: 10px;
+}
+.team-block {
+  text-align: center;
+}
+.team-block h3 {
+  font-family: 'InterBold', sans-serif;
+  font-size: 2rem;
+}
+.team-block p {
+  font-family: 'InterRegular', sans-serif;
+  font-size: 1.7rem;
+}
+.team-img img {
+  display: block;
+  margin: 0 auto;
+}
+.slick-active {
+  outline: none;
+}
+.arrow {
+  position: absolute;
+  z-index: 99;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 54px;
+  height: 54px;
+  bottom: none;
+  top: 25%;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../img/Vector1.svg) center no-repeat;
+  background-size: 70%;
+}
+.next {
+  right: 0;
+  background: url(../img/Vector2.svg) center no-repeat;
+  background-size: 70%;
+}
+.menu {
+  display: inline-block;
+  font-weight: 200;
+  font-size: 2rem;
+  height: 4rem;
+  line-height: 4rem;
+  margin-left: 1rem;
+  color: #282828;
+}
+.btn {
+  margin-top: 1px;
+  border-radius: 35px;
+  height: 40px;
+  background-color: #ac63b9;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: none;
+}
+.fotorama {
+  margin-top: 40px;
+}
+/*Оформление секции контактов*/
+.contacts h1 {
+  font-family: 'InterBold', sans-serif;
+  font-size: 20px;
+}
+.contacts p {
+  font-family: 'InterRegular', sans-serif;
+}
+.contacts a {
+  color: #282828;
+  font-style: italic;
+}
+.contacts .social-network {
+  margin-top: 63px;
+}
+footer {
+  background-color: #ac63b9;
+  padding: 20px 0;
+}
+/*Оформление модального окна*/
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-form {
+  margin-top: 3rem;
+  padding: 0;
+}
+.popup-close {
+  position: absolute;
+  top: -1.8rem;
+  right: -2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+  color: #fff;
+}
+.popup-content {
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  top: 10%;
+  background-color: #fff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 4rem 6rem;
+}
+.popup-header {
+  font-family: 'InterBold', sans-serif;
+}
