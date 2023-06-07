@@ -13,7 +13,7 @@ header img{
 	margin-left: 5%;
 	display: inline-block;
   font-size: 30px;
-  color: #282828;
+  color: #7442c8;
 }
 a {
   text-decoration: none;
@@ -28,4 +28,78 @@ nav{
 	display: flex;
   width: 100%;
   justify-content: flex-end;
+}
+
+.primary{
+	height: 600px;
+	width: 100%;
+	background-image: url("../img/piy.png");
+
+}
+
+
+/*Стили FAQ*/
+.faq {
+  width: 80%;
+  margin-top: 60px;
+  font-size: 20px;
+}
+.faq h2{
+	text-transform: uppercase;
+}
+ 
+details {
+  background-color: #a319ff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+ 
+summary {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+ 
+details[open] {
+  background-color: #e0b3ff;
+}
+/*Стили FAQ*/
+
+
+/*СТИЛИ СТРАНИЦЫ "НАША КОМАНДА"*/
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #e0b3ff;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.photo{
+  width: 250px;
+  height: 350px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.card h2 {
+  font-size: 30px;
+}
+
+.card p {
+  font-size: 20px;
+}
+.Gosha p{
+	font-size: 24px;
+}
+
+.messenger{
+	margin-right: 10px;
+	width: 30px;
+  height: 30px;
+  float: right;
 }
