@@ -1,41 +1,162 @@
 html {
   font-size: 10px;
-  padding: 1% 10% 0% 10%;
 }
+
+body{
+	background: #fff url(../img/fon_1.webp);
+}
+
 header img{
 	width: 100px;
 	height: 100px;
 	margin-right: 15%;
 	display: inline-block;
 }
+
 .menu{
+  transition: 0.5s; /* Время эффекта */ 
 	font-size: 10px;
 	margin-left: 5%;
 	display: inline-block;
   font-size: 30px;
   color: #7442c8;
 }
+
+.menu:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
 a {
   text-decoration: none;
 }
+
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    padding: 1% 10% 0% 10%;
+
 }
+
 nav{
 	display: flex;
   width: 100%;
   justify-content: flex-end;
+  margin-bottom: 7px;
 }
 
-.primary{
-	height: 600px;
-	width: 100%;
-	background-image: url("../img/piy.png");
+main{
+	padding: 1% 10% 0% 10%;
+}
+
+main img{
+	margin-top: 20px;
+	height: 426px;
+	width: 640px;
+	border-radius: 10px;
+}
+
+.card_2{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	justify-content: center;
+}
+
+.card_2 h2{
+	border: 4px outset #a319ff;
+	padding: 17px;
+	border-radius: 14px;
+	margin-left: 20px;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+
+
+/*Блок "Наши преимущества"*/
+.advantages{
+	text-align: center;
+	font-size: 30px;
 
 }
+
+.our-advantages{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+.advantage-container {
+  text-align: center;
+  max-width: 300px;
+}
+
+.advantage-container img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.advantage-container h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.advantage-container p {
+  font-size: 18px;
+  color: #666;
+}
+/*Блок "Наши преимущества" закончился*/
+
+
+
+.offers{
+	text-align: center;
+	font-size: 30px;
+}
+
+.card_3{
+	display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.card_3 h2{
+	border: 4px dashed #a319ff;
+	padding: 17px;
+	border-radius: 14px;
+	margin-left: 20px;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+
+
+/*Кнопка "Наши услуги"*/
+.oval-button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #ba66ff;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+}
+
+.oval-button:hover {
+  background-color: #8c00ff;
+  cursor: pointer;
+}
+/*Кнопка "Наши услуги" закончилась*/
+
 
 
 /*Стили FAQ*/
@@ -49,7 +170,7 @@ nav{
 }
  
 details {
-  background-color: #a319ff;
+  background-color: #ba66ff;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 0.5em;
@@ -65,10 +186,18 @@ summary {
 details[open] {
   background-color: #e0b3ff;
 }
-/*Стили FAQ*/
+/*Стили FAQ закончились*/
+
 
 
 /*СТИЛИ СТРАНИЦЫ "НАША КОМАНДА"*/
+h1{
+	font-weight: normal;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 .card {
   display: flex;
   align-items: center;
@@ -93,9 +222,6 @@ details[open] {
 .card p {
   font-size: 20px;
 }
-.Gosha p{
-	font-size: 24px;
-}
 
 .messenger{
 	margin-right: 10px;
@@ -103,3 +229,5 @@ details[open] {
   height: 30px;
   float: right;
 }
+
+/*СТИЛИ СТРАНИЦЫ "НАША КОМАНДА" ЗАКОНЧИЛИСЬ*/
