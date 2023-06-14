@@ -138,6 +138,7 @@ main img{
 
 /*Кнопка "Наши услуги"*/
 .oval-button {
+	margin-top: 20px;
   display: inline-block;
   text-align: center;
   padding: 10px 20px;
@@ -231,3 +232,30 @@ h1{
 }
 
 /*СТИЛИ СТРАНИЦЫ "НАША КОМАНДА" ЗАКОНЧИЛИСЬ*/
+
+
+
+
+.work-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.work-list li {
+	margin-left: 25px;
+	list-style-type:	disc;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.work-list li a {
+    text-decoration: none;
+  }
+
+.work-list li a:hover {
+    text-decoration: underline;
+   }
+
+.work-list h4 {
+	font-size: 25px;
